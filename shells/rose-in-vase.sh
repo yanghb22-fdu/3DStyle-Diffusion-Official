@@ -1,0 +1,21 @@
+CUDA_VISIBLE_DEVICES=2 python main.py \
+--obj_path data/source_meshes/2-rose-with-stem-and-vase-f49500.obj \
+--output_dir results/rose-in-vase \
+--prompt 'a red rose sitting in a white vase' \
+--init_r_and_s \
+--init_roughness 0.9 \
+--width 512 \
+--background 'black' \
+--radius 2.0 \
+--n_views 1 \
+--material_random_pe_numfreq 3 \
+--material_random_pe_sigma 0.5 \
+--num_lgt_sgs 64 \
+--frontview_std 2 \
+--clipavg view \
+--lr_decay 0.7 \
+--seed 100 \
+--n_iter 3001 \
+--learning_rate 0.0005 \
+--frontview_center 1.96349 0.6283 \
+--train_poses uniform

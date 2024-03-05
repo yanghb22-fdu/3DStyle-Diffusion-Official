@@ -1,0 +1,21 @@
+CUDA_VISIBLE_DEVICES=0 python main.py \
+--obj_path data/source_meshes/rose-f19760.obj \
+--output_dir results/rose \
+--prompt 'a red rose with green leaves' \
+--init_r_and_s \
+--init_roughness 0.1 \
+--width 512 \
+--background 'black' \
+--radius 2.5 \
+--n_views 1 \
+--material_nerf_pe_numfreq 26 \
+--normal_nerf_pe_numfreq 10 \
+--num_lgt_sgs 64 \
+--frontview_std 2 \
+--clipavg view \
+--lr_decay 0.7 \
+--seed 30 \
+--n_iter 2001 \
+--learning_rate 0.0005 \
+--frontview_center 1.96349 0.6283 \
+--train_poses uniform
