@@ -28,6 +28,9 @@ Call the below shell scripts to generate example styles.
 ```
 The outputs will be saved to `results/`
 
+### Acknowledgments
+The 3DStyle-Diffusion code is heavily based on the [TANGO](https://github.com/Gorilla-Lab-SCUT/tango) project, and the [ControlNet](https://github.com/lllyasviel/ControlNet).
+
 ## Citation
 ```
 @inproceedings{HaiboYangACMMM2023,
